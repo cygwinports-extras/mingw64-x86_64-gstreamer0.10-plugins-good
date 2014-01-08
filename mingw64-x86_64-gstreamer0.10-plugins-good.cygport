@@ -1,13 +1,13 @@
 CROSS_HOST="x86_64-w64-mingw32"
-GST_PLUGINS_ENABLE="annodex cairo directsound esd flac gconf gdk_pixbuf jpeg
-                    libdv libpng shout2 soup speex taglib waveform wavpack"
-GST_PLUGINS_DISABLE="aalib dv1394 gst_v4l2 hal jack libcaca oss oss4 osx_audio
-                     osx_video pulse sunaudio x xvideo"
+GST_PLUGINS_ENABLE="aalib annodex cairo directsound esd flac gconf gdk_pixbuf
+	jpeg libcaca libdv libpng shout2 soup speex taglib waveform wavpack"
+GST_PLUGINS_DISABLE="dv1394 gst_v4l2 hal jack oss oss4 osx_audio osx_video
+	pulse sunaudio x xvideo"
 inherit cross gst-plugins
 
 NAME="mingw64-x86_64-gstreamer0.10-plugins-good"
 VERSION=0.10.31
-RELEASE=2
+RELEASE=3
 CATEGORY="Devel"
 SUMMARY="GStreamer 0.10 Good Plug-ins collection for Win64 toolchain"
 DESCRIPTION="GStreamer Good Plug-ins is a set of plug-ins that are
